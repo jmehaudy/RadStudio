@@ -39,7 +39,7 @@ object frmExtReyWin: TfrmExtReyWin
         Caption = 'Desde Fecha'
       end
       object cdbRangoFechasOK: TSpeedButton
-        Left = 432
+        Left = 448
         Top = 72
         Width = 105
         Height = 33
