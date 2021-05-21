@@ -2,7 +2,7 @@ object frmExtReyWin: TfrmExtReyWin
   Left = 0
   Top = 0
   Caption = 'Extraccion de Fichadas de ReyWin'
-  ClientHeight = 496
+  ClientHeight = 728
   ClientWidth = 830
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,12 +18,14 @@ object frmExtReyWin: TfrmExtReyWin
     Left = 0
     Top = 36
     Width = 830
-    Height = 460
-    ActivePage = tsSeleccion
+    Height = 692
+    ActivePage = tsGrilla
     Align = alClient
     TabOrder = 0
+    ExplicitHeight = 460
     object tsSeleccion: TTabSheet
       Caption = 'Seleccion de Fechas'
+      ExplicitHeight = 432
       object Label1: TLabel
         Left = 53
         Top = 32
@@ -121,13 +123,6 @@ object frmExtReyWin: TfrmExtReyWin
           0000000000000000000000000000000000000000000000000000}
         OnClick = cdbRangoFechasOKClick
       end
-      object Label3: TLabel
-        Left = 336
-        Top = 160
-        Width = 31
-        Height = 13
-        Caption = 'Label3'
-      end
       object cxFechaDesde: TcxDateEdit
         Left = 136
         Top = 29
@@ -146,15 +141,17 @@ object frmExtReyWin: TfrmExtReyWin
     object tsGrilla: TTabSheet
       Caption = 'Datos a Exportar'
       ImageIndex = 1
+      ExplicitHeight = 432
       object cxGrid1: TcxGrid
         Left = 0
         Top = 0
         Width = 822
-        Height = 432
+        Height = 664
         Align = alClient
         TabOrder = 0
         DragOpening = False
         LookAndFeel.Kind = lfStandard
+        ExplicitHeight = 432
         object cxGrid1DBTableView1: TcxGridDBTableView
           Navigator.Buttons.CustomButtons = <>
           Navigator.Visible = True
@@ -259,11 +256,11 @@ object frmExtReyWin: TfrmExtReyWin
     AutoCommit = False
     ProviderName = 'Oracle'
     Username = 'RELOPERSO01'
-    Server = 'COSU02'
+    Server = 'COSU03'
     Connected = True
     LoginPrompt = False
     Left = 96
-    Top = 328
+    Top = 336
     EncryptedPassword = 'ADFFBAFFB3FFB0FFAFFFBAFFADFFACFFB0FFCFFFCEFF'
   end
   object qPERIODOS_TRABAJADOS: TUniQuery

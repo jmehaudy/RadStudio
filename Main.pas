@@ -56,7 +56,6 @@ type
     qPERIODOS_TRABAJADOSPER_HORAS: TFloatField;
     qPERIODOS_TRABAJADOSLEG_NOMBRE: TStringField;
     cxGridPopupMenu1: TcxGridPopupMenu;
-    Label3: TLabel;
     procedure ImportarEventos;
     procedure tbtSalirClick(Sender: TObject);
     procedure tbtImportarClick(Sender: TObject);
@@ -84,7 +83,7 @@ implementation
 
 procedure TfrmExtReyWin.FormShow(Sender: TObject);
 begin
-  FormManage('SHOW');
+  FormManage('SHOWGRID');
 end;
 
 procedure TfrmExtReyWin.ImportarEventos;
@@ -110,7 +109,7 @@ end;
 
 procedure TfrmExtReyWin.tbtImportarClick(Sender: TObject);
 begin
-  if sActualPhase = 'SHOW'     then    ImportarEventos;
+ // if sActualPhase = 'SHOW'     then    ImportarEventos;
 
   if sActualPhase = 'SHOWGRID' then    ExportarPeriodos;
 
